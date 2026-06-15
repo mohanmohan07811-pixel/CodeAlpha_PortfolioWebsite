@@ -2,7 +2,7 @@
 
 A modern, premium, production-ready personal portfolio website built entirely with HTML5, CSS3, and Vanilla JavaScript. Crafted to make a strong first impression for internship and placement applications.
 
-> Live Demo: [GitHub Pages](https://mohanmohan07811-pixel.github.io/CodeAlpha_PortfolioWebsite)  
+> Live Demo: [Netlify](https://6a30444375bf9b3b0e9cfc6b--spectacular-zabaione-204682.netlify.app/)  
 > Repository: [CodeAlpha_PortfolioWebsite](https://github.com/mohanmohan07811-pixel/CodeAlpha_PortfolioWebsite)
 
 ---
@@ -458,6 +458,8 @@ const config = {
 > GitHub Pages deployment takes 1-2 minutes after saving.
 
 ### Netlify (Free, Instant)
+
+> Deployed: [https://6a30444375bf9b3b0e9cfc6b--spectacular-zabaione-204682.netlify.app/](https://6a30444375bf9b3b0e9cfc6b--spectacular-zabaione-204682.netlify.app/)
 
 1. Go to [netlify.com](https://netlify.com) and sign up
 2. Click **Add new site > Deploy manually**
