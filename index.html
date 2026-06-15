@@ -1,0 +1,745 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohan Yadav - Computer Science Student & Full Stack Developer. Passionate about building impactful software solutions. Explore my projects and skills." />
+  <meta name="keywords" content="Mohan Yadav, portfolio, full stack developer, computer science, web development, React, Node.js" />
+  <meta name="author" content="Mohan Yadav" />
+  <meta property="og:title" content="Mohan Yadav | CS Student & Developer" />
+  <meta property="og:description" content="Personal portfolio of Mohan Yadav â€” CS student passionate about building impactful software." />
+  <meta property="og:type" content="website" />
+  <title>Mohan Yadav | CS Student & Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">&lt;MY /&gt;</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- Particles Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">&lt;MY /&gt;</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Available for Internships &amp; Opportunities
+      </div>
+      <h1 class="hero-name reveal-up">
+        Hi, I'm <span class="gradient-text">Mohan Yadav</span>
+      </h1>
+      <div class="hero-title reveal-up">
+        <span class="static-text">I build&nbsp;</span>
+        <span id="typed-text" class="typed-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-description reveal-up">
+        A passionate Computer Science student crafting elegant, scalable software solutions.
+        From full-stack web apps to intelligent systems â€” I turn ideas into reality.
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="stat-item">
+          <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Dedication</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="hero-card glass-card">
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="card-title">portfolio.js</span>
+        </div>
+        <div class="card-body">
+          <pre class="code-snippet"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Mohan Yadav"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"CS Student"</span>,
+  <span class="c-prop">passion</span>: <span class="c-str">"Building Impact"</span>,
+  <span class="c-prop">skills</span>: [
+    <span class="c-str">"Full Stack"</span>,
+    <span class="c-str">"React"</span>,
+    <span class="c-str">"Node.js"</span>
+  ],
+  <span class="c-prop">status</span>: <span class="c-str">"Open to Work âœ¨"</span>
+};</code></pre>
+        </div>
+      </div>
+      <div class="floating-badge badge-1 glass-card">
+        <i class="fab fa-react"></i> React
+      </div>
+      <div class="floating-badge badge-2 glass-card">
+        <i class="fab fa-node-js"></i> Node.js
+      </div>
+      <div class="floating-badge badge-3 glass-card">
+        <i class="fas fa-database"></i> MongoDB
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">A motivated developer with a hunger for solving real-world problems</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal-left">
+          <div class="about-image-card glass-card">
+            <div class="image-placeholder">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+            <div class="about-image-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>India</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span>B.Tech CS</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-code"></i>
+                <span>Full Stack Dev</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <h3 class="about-heading">Turning Code Into <span class="gradient-text">Real-World Impact</span></h3>
+          <p class="about-text">
+            I'm a final-year Computer Science student with a deep passion for building products that solve real problems.
+            My journey started with simple web pages, and has evolved into crafting full-stack applications that serve real users.
+          </p>
+          <p class="about-text">
+            I built <strong>Emergency Blood Connector</strong> â€” a platform connecting blood donors and recipients in critical moments.
+            That project defined what programming means to me: not just code, but impact.
+          </p>
+          <p class="about-text">
+            Currently seeking internship and placement opportunities where I can contribute meaningfully, grow rapidly,
+            and collaborate with teams that are building the future.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Problem Solver</span>
+            <span class="tag">Team Player</span>
+            <span class="tag">Fast Learner</span>
+            <span class="tag">Open Source Enthusiast</span>
+          </div>
+
+          <!-- Education Timeline -->
+          <div class="education-section">
+            <h4 class="sub-heading"><i class="fas fa-graduation-cap"></i> Education</h4>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                  <span class="timeline-year">2022 â€“ 2026</span>
+                  <h5>B.Tech in Computer Science & Engineering</h5>
+                  <p>CGPA: 7.8/10 Â· Focus on Full Stack Development & Algorithms</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                  <span class="timeline-year">2020 â€“ 2022</span>
+                  <h5>Higher Secondary (MPC)</h5>
+                  <p>Scored 92% Â· Strong foundation in Mathematics & Sciences</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="assets/resume.pdf" download class="btn btn-primary">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-envelope"></i> Let's Talk
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I work with</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I've worked with across various projects</p>
+      </div>
+
+      <div class="skills-categories reveal-up">
+        <button class="skill-filter active" data-filter="all">All</button>
+        <button class="skill-filter" data-filter="frontend">Frontend</button>
+        <button class="skill-filter" data-filter="backend">Backend</button>
+        <button class="skill-filter" data-filter="tools">Tools</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+
+        <div class="skill-card glass-card reveal-up" data-category="frontend">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h4>HTML5</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          <span class="skill-percent">92%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="frontend">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <h4>CSS3</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <span class="skill-percent">88%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="frontend">
+          <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+          <h4>JavaScript</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="frontend">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <h4>React.js</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          <span class="skill-percent">80%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="backend">
+          <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+          <h4>Node.js</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          <span class="skill-percent">78%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="backend">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
+          <h4>Express.js</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-percent">75%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="backend">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h4>MongoDB</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+          <span class="skill-percent">72%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="backend">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h4>MySQL</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+          <span class="skill-percent">68%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="tools">
+          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+          <h4>Git</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="tools">
+          <div class="skill-icon"><i class="fab fa-github"></i></div>
+          <h4>GitHub</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <span class="skill-percent">88%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="tools">
+          <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+          <h4>Linux / CLI</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          <span class="skill-percent">70%</span>
+        </div>
+
+        <div class="skill-card glass-card reveal-up" data-category="backend">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h4>Python</h4>
+          <div class="skill-bar"><div class="skill-fill" data-width="74"></div></div>
+          <span class="skill-percent">74%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A selection of projects that showcase my skills and problem-solving mindset</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Emergency Blood Connector -->
+        <div class="project-card glass-card featured reveal-up">
+          <div class="project-badge">Featured</div>
+          <div class="project-image">
+            <div class="project-img-placeholder blood">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="https://github.com/mohanmohan07811-pixel" target="_blank" rel="noopener" class="overlay-btn">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="overlay-btn">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">React</span>
+              <span class="ptag">Node.js</span>
+              <span class="ptag">MongoDB</span>
+              <span class="ptag">Express</span>
+            </div>
+            <h3 class="project-title">Emergency Blood Connector</h3>
+            <p class="project-desc">
+              A full-stack MERN application connecting blood donors with recipients in real-time emergencies.
+              Features donor registration, blood request management, geolocation-based matching, and JWT authentication.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/mohanmohan07811-pixel" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Music Player -->
+        <div class="project-card glass-card reveal-up">
+          <div class="project-image">
+            <div class="project-img-placeholder music">
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="https://github.com/mohanmohan07811-pixel" target="_blank" rel="noopener" class="overlay-btn">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="overlay-btn">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">HTML5</span>
+              <span class="ptag">CSS3</span>
+              <span class="ptag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Music Player</h3>
+            <p class="project-desc">
+              A sleek, feature-rich music player with custom audio controls, playlist management,
+              progress scrubbing, and animated album art visualizer.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/mohanmohan07811-pixel" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Image Gallery -->
+        <div class="project-card glass-card reveal-up">
+          <div class="project-image">
+            <div class="project-img-placeholder gallery">
+              <i class="fas fa-images"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="https://github.com/mohanmohan07811-pixel" target="_blank" rel="noopener" class="overlay-btn">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="overlay-btn">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag">HTML5</span>
+              <span class="ptag">CSS Grid</span>
+              <span class="ptag">JavaScript</span>
+            </div>
+            <h3 class="project-title">Image Gallery</h3>
+            <p class="project-desc">
+              A responsive masonry image gallery with lightbox, lazy loading, category filtering,
+              and smooth CSS animations for a polished user experience.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/mohanmohan07811-pixel" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-more reveal-up">
+        <a href="https://github.com/mohanmohan07811-pixel" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+          <i class="fab fa-github"></i> View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Experience &amp; <span class="gradient-text">Timeline</span></h2>
+        <p class="section-subtitle">My professional journey and milestones as a developer</p>
+      </div>
+
+      <div class="exp-timeline">
+
+        <div class="exp-item reveal-up">
+          <div class="exp-date">
+            <span>2025</span>
+          </div>
+          <div class="exp-dot-wrap">
+            <div class="exp-dot active"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-content glass-card">
+            <div class="exp-header">
+              <div>
+                <h3>Seeking Internship Opportunities</h3>
+                <span class="exp-company">Software Development / Full Stack</span>
+              </div>
+              <span class="exp-badge open">Open to Work</span>
+            </div>
+            <p>Actively seeking internship roles in software development, full-stack engineering, or backend development. Ready to contribute from day one with strong fundamentals and project experience.</p>
+            <div class="exp-skills">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-up">
+          <div class="exp-date">
+            <span>2024</span>
+          </div>
+          <div class="exp-dot-wrap">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-content glass-card">
+            <div class="exp-header">
+              <div>
+                <h3>CodeAlpha Virtual Internship</h3>
+                <span class="exp-company">CodeAlpha Â· Remote</span>
+              </div>
+              <span class="exp-badge completed">Completed</span>
+            </div>
+            <p>Completed a virtual internship focused on web development projects. Built real-world applications including a music player, image gallery, and portfolio site using HTML, CSS, and JavaScript.</p>
+            <div class="exp-skills">
+              <span>HTML/CSS</span><span>JavaScript</span><span>UI/UX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-up">
+          <div class="exp-date">
+            <span>2023</span>
+          </div>
+          <div class="exp-dot-wrap">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-content glass-card">
+            <div class="exp-header">
+              <div>
+                <h3>Full Stack Project â€” Blood Connector</h3>
+                <span class="exp-company">Personal Project Â· MERN Stack</span>
+              </div>
+              <span class="exp-badge project">Project</span>
+            </div>
+            <p>Designed, architected, and deployed a full-stack emergency blood donor-recipient matching platform. Implemented JWT auth, role-based access, real-time notifications, and donor geolocation matching.</p>
+            <div class="exp-skills">
+              <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-up">
+          <div class="exp-date">
+            <span>2022</span>
+          </div>
+          <div class="exp-dot-wrap">
+            <div class="exp-dot"></div>
+          </div>
+          <div class="exp-content glass-card">
+            <div class="exp-header">
+              <div>
+                <h3>Started B.Tech â€” Computer Science</h3>
+                <span class="exp-company">University Â· Batch of 2026</span>
+              </div>
+              <span class="exp-badge edu">Education</span>
+            </div>
+            <p>Began my CS degree journey. Dived deep into data structures, algorithms, DBMS, OS, and computer networks while simultaneously building web development skills through self-learning and projects.</p>
+            <div class="exp-skills">
+              <span>DSA</span><span>C++</span><span>DBMS</span><span>Web Dev</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="resume-cta glass-card reveal-up">
+        <div class="resume-cta-content">
+          <h2>Interested in working together?</h2>
+          <p>My resume summarizes my education, projects, and skills. Download it to learn more about what I can bring to your team.</p>
+          <a href="assets/resume.pdf" download class="btn btn-primary btn-lg">
+            <i class="fas fa-file-pdf"></i> Download Resume
+          </a>
+        </div>
+        <div class="resume-cta-visual">
+          <div class="resume-icon-wrap">
+            <i class="fas fa-file-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get in touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Have an opportunity or just want to connect? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-detail glass-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:mohanmohan07811@gmail.com">mohanmohan07811@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail glass-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+916281885318">+91 62818 85318</a>
+            </div>
+          </div>
+          <div class="contact-detail glass-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <span>India Â· Open to Remote</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/mohanmohan07811-pixel" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohan-yadav-8b077a413?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com/mohanyadav" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="mailto:mohanmohan07811@gmail.com" class="social-btn" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form id="contact-form" class="contact-form glass-card" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+              <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or just say hi!" required></textarea>
+              <span class="field-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+            <div id="form-success" class="form-success hidden">
+              <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">&lt;MY /&gt;</a>
+          <p>Building impactful software, one commit at a time. Open to internships and full-time opportunities.</p>
+          <div class="social-links">
+            <a href="https://github.com/mohanmohan07811-pixel" target="_blank" rel="noopener" class="social-btn sm" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mohan-yadav-8b077a413?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener" class="social-btn sm" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/mohanyadav" target="_blank" rel="noopener" class="social-btn sm" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Projects</h5>
+          <ul>
+            <li><a href="#">Emergency Blood Connector</a></li>
+            <li><a href="#">Music Player</a></li>
+            <li><a href="#">Image Gallery</a></li>
+            <li><a href="https://github.com/mohanmohan07811-pixel" target="_blank">GitHub Profile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mohan Yadav. Crafted with <i class="fas fa-heart" style="color: #ef4444;"></i> and lots of coffee.</p>
+        <p>Designed &amp; Developed by Mohan Yadav</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
